@@ -1,8 +1,15 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 800px;
 }
 
 a {
   color: #00B7FF;
+}
+
+code, pre {
+  font-family: monospace;
+  font-size: .8rem;
+  width: auto;
 }

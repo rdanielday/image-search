@@ -2,4 +2,32 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Example usage as below:
+  code #{host}/new/imagesearch?q=cute%20dogs
+  p returns 
+  code
+    pre.
+      [
+        {
+          url: "https://i.pinimg.com/736x/da/8e/fc/da8efc68a9eb13b228eee3609962a1a5--cute-dog-costumes-puppy-costume.jpg",
+          snippet: "Best 20+ Cute dogs ideas on Pinterest",
+          thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZHc7icV0BanoAKkmBPvmWR7aP4LxPJD76aOIuld2Vm4KMnlxjaBQWWkxZ",
+          context: "https://www.pinterest.com/explore/cute-dogs/"
+        },
+        {
+          url: "https://iheartdogs.com/wp-content/uploads/2015/01/Screenshot-2015-01-17-16.15.29.png",
+          snippet: "10 Dog Breeds That Have The CUTEST Puppies – iHeartDogs.com",
+          thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTwHNThWkf81kpNXdLeSVJzCpSYgPq4I4rM4RvRRcV25H_Tp2pCG95k2Gc",
+          context: "https://iheartdogs.com/10-dog-breeds-that-have-the-cutest-puppies/"
+        },
+        {
+          url: "https://i.pinimg.com/736x/be/82/15/be821544fc5f328567cb538f96edb49a--snowball-too-cute.jpg",
+          snippet: "Best 20+ Cute dogs ideas on Pinterest",
+          thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlOIU_CDDN46fZbXqOw0gh8GZ2UN5vvywNUH28DEs1QQ0pR4a-gRpV4vrT",
+          context: "https://www.pinterest.com/explore/cute-dogs/"
+        },
+      
+  p You may page through the results as such:
+  code #{host}/new/imagesearch?q=cute%20dogs&start=2
+  p The most recent search queries may be viewed here:
+  code #{host}/imagesearch
